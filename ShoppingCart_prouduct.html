@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    </link>
+
+    <link rel="stylesheet" href="css/index.css">
+
+    <title>EN健身用品</title>
+</head>
+
+<body>
+    <!-- headers -->
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="ShoppingCart.html">
+            <i class="fas fa-dumbbell text-info" aria-hidden="true"></i>
+            EN健身用品
+        </a>
+
+        <!-- 購物車內的數量(Button 內包含 icon, 數量 badge) -->
+        <div class="dropdown ml-auto">
+            <button class="btn btn-sm btn-cart" data-toggle="dropdown" data-flip="false">
+                <i class="fa fa-shopping-cart text-dark fa-2x" aria-hidden="true"></i>
+                <span class="badge badge-pill badge-danger">2</span>
+                <!-- aria-hidden="true" 可以讓螢幕閱讀器讀不到 -->
+            </button>
+            <div class="dropdown-menu dropdown-menu-right" style="min-width: 300px;">
+                <div class="px-4 py-3">
+                    <h6>已選擇商品</h6>
+                    <table class="table table-sm text-nowrap">
+                        <tbody>
+                            <tr>
+                                <td class="align-middle text-center">
+                                    <a href="#removeModal" class="text-muted" data-toggle="modal"
+                                        data-title="刪除 SHADOW T-SHIRT 1 件">
+                                        <i class="far fa-trash-alt text-info" aria-hidden="true"></i>
+                                    </a>
+                                </td>
+                                <td class="align-middle">SHADOW T-SHIRT</td>
+                                <td class="align-middle">1 件</td>
+                                <td class="align-middle text-right">NT$ 499</td>
+                            </tr>
+                            <tr>
+                                <td class="align-middle text-center">
+                                    <a href="#removeModal" class="text-muted" data-toggle="modal"
+                                        data-title="刪除 Hoodie - Charcoal 1 件">
+                                        <i class="far fa-trash-alt text-info" aria-hidden="true"></i>
+                                    </a>
+                                </td>
+                                <td class="align-middle">Hoodie - Charcoal</td>
+                                <td class="align-middle">1 件</td>
+                                <td class="align-middle text-right">NT$ 450</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td scope="row" colspan="3" class="text-right">總金額</td>
+                                <td scope="row" colspan="3" class="text-right">NT$ 949</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <a href="#" class="btn btn-primary btn-block">結帳去</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb bg-transparent pl-0">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">MENS</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Hoodie - Charcoal</li>
+            </ol>
+        </nav>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="sticky-top" style="top: 10px">
+                    <h1 class="h2">TRUE HOODIE - Charcoal</h1>
+                    <div class="d-flex justify-content-end align-items-end">
+                        <span class="text-muted">售價 NT$ 899</span>
+                        <div class="h3 ml-auto mb-0 text-danger">
+                            <small>特價 NT$</small>
+                            <strong>450</strong>
+                        </div>
+                    </div>
+                    <hr>尺寸：
+                    <div class="btn-group btn-group-sm btn-group-toggle" data-toggle="buttons">
+                        <label class="btn btn-outline-secondary active">
+                            <input type="radio" name="options" id="option1">S
+                        </label>
+                        <label class="btn btn-outline-secondary">
+                            <input type="radio" name="options" id="option2" checked>M
+                        </label>
+                        <label class="btn btn-outline-secondary">
+                            <input type="radio" name="options" id="option3">L
+                        </label>
+                        <label class="btn btn-outline-secondary disabled">
+                            <input type="radio" name="options" id="option3" disabled>XL
+                        </label>
+                    </div>
+                    <div class="input-group mt-3">
+                        <select name="" id="" class="form-control mr-1">
+                            <option value="1">1 件</option>
+                            <option value="2">2 件</option>
+                            <option value="3">3 件</option>
+                        </select>
+                        <a href="#" class="btn btn-primary">
+                            加入購物車
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-8">
+                <h2>True Series</h2>
+                <p class="card-text">The True Series is an essential to the lifestyle. Warm up in the True Series
+                    featuring fleece based fabrication that
+                    offers warmth, comfort and durability.</p>
+                <h3 class="mt-5 text-center font-weight-bold">特色修身版型</h3>
+                <img src="images/product01.jpg" class="img-fluid mx-auto d-block" alt="Responsive image">
+                <h3 class="mt-5 text-center font-weight-bold">精緻的羊毛面料</h3>
+                <img src="images/product02.jpg" class="img-fluid mx-auto d-block" alt="Responsive image">
+                <h3 class="mt-5 text-center font-weight-bold">袋鼠口袋</h3>
+                <img src="images/product03.jpg" class="img-fluid mx-auto d-block" alt="Responsive image">
+                <h3 class="mt-5 text-center font-weight-bold">尺碼對照表</h3>
+                <img src="images/size.JPG" class="img-fluid mx-auto d-block" alt="Responsive image">
+
+                <div class="card mt-5">
+                    <div class="card-header">
+                        商品評論
+                    </div>
+                    <div class="card-body">
+                        <div class="media">
+                            <img class="mr-3" src="http://randomuser.me/api/portraits/men/96.jpg" width="64" height="64"
+                                alt="Generic placeholder image">
+                            <div class="media-body mb-4">
+                                <h5 class="mt-0 font-weight-bold">Alex Wang</h5>
+                                <div class="form-group">
+                                    <textarea class="form-control" rows="3" placeholder="寫下寶貴的意見"></textarea>
+
+                                    <div class="rating">
+                                        <input type="radio" name="test" id="one" checked />
+                                        <label for="one"><i class="fa fa-star"></i></label>
+                                        <input type="radio" name="test" id="two" />
+                                        <label for="two"><i class="fa fa-star"></i></label>
+                                        <input type="radio" name="test" id="three" />
+                                        <label for="three"><i class="fa fa-star"></i></label>
+                                        <input type="radio" name="test" id="four" />
+                                        <label for="four"><i class="fa fa-star"></i></label>
+                                        <input type="radio" name="test" id="five" />
+                                        <label for="five"><i class="fa fa-star"></i></label>
+                                    </div>
+
+                                    <button type="button" class="btn btn-info btn-block mt-2">我要評論</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <img class="mr-3" src="http://randomuser.me/api/portraits/women/17.jpg" width="64"
+                                height="64" alt="Generic placeholder image">
+                            <div class="media-body mb-4">
+                                <h5 class="mt-0 font-weight-bold">Melinda Pena</h5>
+                                <div>
+                                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                </div>
+                                <p>
+                                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante
+                                    sollicitudin. Cras purus odio, vestibulum
+                                    in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
+                                    fringilla. Donec lacinia congue felis
+                                    in faucibus.
+                                </p>
+                                <small class="text-secondary">about 3 days ago</small>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <img class="mr-3" src="http://randomuser.me/api/portraits/women/79.jpg" width="64"
+                                height="64" alt="Generic placeholder image">
+                            <div class="media-body mb-4">
+                                <h5 class="mt-0 font-weight-bold">Melissa Perry</h5>
+                                <div>
+                                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                </div>
+                                <p>
+                                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante
+                                    sollicitudin. Cras purus odio, vestibulum
+                                    in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
+                                    fringilla. Donec lacinia congue felis
+                                    in faucibus.
+                                </p>
+                                <small class="text-secondary">about 8 days ago</small>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <img class="mr-3" src="http://randomuser.me/api/portraits/men/81.jpg" width="64" height="64"
+                                alt="Generic placeholder image">
+                            <div class="media-body mb-4">
+                                <h5 class="mt-0 font-weight-bold">Daryl West</h5>
+                                <div class="text-warning">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </div>
+                                <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante
+                                    sollicitudin. Cras purus odio, vestibulum
+                                    in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
+                                    fringilla. Donec lacinia congue felis
+                                    in faucibus.
+                                </p>
+                                <small class="text-secondary">about 14 days ago</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mt-5 mb-3 bg-light">
+                    <div class="card-body text-center">
+                        <h5 class="card-title h3">購物需知</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
+                            praesentium odio vel libero fugit quaerat voluptas dolorem excepturi iure animi a, minus,
+                            optio iste itaque sequi ipsum, pariatur modi sed.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="bg-light text-muted py-5">
+        <div class="container">
+            <ul class="list-inline text-center">
+                <li class="list-inline-item">@ Copright 2020 EN健身用品</li>
+                <li class="list-inline-item">
+                    <a class="text-info" href="#">
+                        <i class="fab fa-instagram" aria-hidden="true"></i>
+                        Instagram
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="text-info" href="#">
+                        <i class="fab fa-facebook-square" aria-hidden="true"></i>
+                        Facebook
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="text-info" href="#">
+                        <i class="fas fa-dumbbell text-info" aria-hidden="true"></i>
+                        About
+                    </a>
+                </li>
+            </ul>
+            <p class="text-center">Made with Bootstrap4</p>
+        </div>
+    </footer>
+
+    <!-- 刪除 Modal -->
+    <div class="modal fade" id="removeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title">刪除商品</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>是否確認刪除訂單?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">否</button>
+                    <button type="button" class="btn btn-outline-danger">是</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+            // 刪除的 Modal 事件
+            $('#removeModal').on('show.bs.modal', function (event) {
+                var btn = $(event.relatedTarget);
+                var title = btn.data('title')
+                var modal = $(this);
+                modal.find('.modal-title').text('確認' + title);
+            })
+        });
+    </script>
+</body>
+
+</html>
