@@ -1,6 +1,6 @@
 # 電子商務網站與購物車版型
 ### 概述：Bootstrap切版練習
-### 技術：HTML、CSS、Bootstrap
+### 技術：HTML、CSS、Bootstrap、RWD
 ### Demo：
 #### 1. 首頁：卡片式排版與 Grid System 排版、List Group 切換產品類別、購物車 Dropdown、Jumbotron 大區塊排版
 ![readme01](https://github.com/IanSu0630/ShoppingCart/blob/master/readme_img/readme01.PNG)
